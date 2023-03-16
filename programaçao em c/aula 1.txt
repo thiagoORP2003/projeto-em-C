@@ -1,0 +1,29 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+   
+   #define TAM_MAX 10
+    int  vet1[TAM_MAX];
+     int  Maior;
+     int i;
+       
+       for(i=0; i<TAM_MAX; i++)
+        scanf("%d",&vet1[i]);//le os dados
+         Maior=vet1[0];//assume que o primeiro e maior
+         for(i=0; i<TAM_MAX; i++)
+          if (vet1[i] >Maior)
+           Maior = vet1 [i];
+           printf("o Maior elemento é %d \n",Maior);
+           
+    
+    return 0;
+}

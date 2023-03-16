@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[5] = {1, 2, 3, 4, 5};
+    int variavel1 = 10;
+    float variavel2 = 2.5;
+    
+    printf("Valores do vetor: ");
+    for(int i=0; i<5; i++) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
+
+    printf("Valor da variavel1: %d\n", variavel1);
+    printf("Valor da variavel2: %f\n", variavel2);
+
+    printf("Endereco do vetor: %p\n", vetor);
+    printf("Endereco da variavel1: %p\n", &variavel1);
+    printf("Endereco da variavel2: %p\n", &variavel2);
+    
+    return 0;
+}
